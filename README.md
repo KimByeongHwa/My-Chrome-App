@@ -3,7 +3,7 @@
 <br>
 <br>
 <br>
-> ### greetings.js
+> ## greetings.js
 
 1. Logic<br>
     - `local storge`에 저장된 `username`이 존재하지 않으면(null이면) login-form을 띄우고,<br>
@@ -18,7 +18,7 @@
     - login-form과 greeting-form의 전환은 `display: none`을 이용한다.
 <br>
 
-> ### clock.js
+> ## clock.js
 
 1. Logic<br>
     - js가 기본적으로 제공하는 `Date()`를 이용하였다.<br>
@@ -28,7 +28,7 @@
     - `setInterval()`을 이용하여 초 단위로 업데이트해주었다.
 <br>
 
-> ### quotes.js
+> ## quotes.js
 
 1. Logic<br>
     - `quotes` 객체를 생성하고, `Math.random()`을 이용하여 각 요소를 랜덤하게 꺼낸다.
@@ -37,7 +37,7 @@
     - `innerText`를 사용하여 `todeayQuote`를 html에 랜덤하게 렌더링하였다.
 <br>
 
-> ### background.js
+> ## background.js
 
 1. Logic<br>
     - 이미지 파일들을 객체에 담고 랜덤하게 뽑을 수 있도록 하였다.<br>
@@ -49,7 +49,7 @@
     - 만든 걸 `appendChild()`를 통해 body에 붙여주었다. `document.body.appendChild(bgImage);`
 <br>
 
-> ### todo.js
+> ## todo.js
 
 1. Logic<br>
     - todo.js에서 구현하고자 하는 것은 새로고침을 하더라도 추가 또는 삭제된 list들이 저장되는 것이다.
