@@ -47,3 +47,15 @@
     - `createElement("img")`을 통해서 js에서 html에 element를 생성할 수 있다는 것을 처음 배웠다.
     - 만든 element에 src를 부여했다. ````bgImage.src = `img/${chosenImage}`;````
     - 만든 걸 `appendChild()`를 통해 body에 붙여주었다. `document.body.appendChild(bgImage);`
+<br>
+
+> ### todo.js
+
+1. Logic<br>
+    - todo.js에서 구현하고자 하는 것은 새로고침을 하더라도 추가 또는 삭제된 list들이 저장되는 것이다.
+    - list 추가는 `localStorge.setItem`을 통해 구현한다. `function saveToDos()`
+    - list 삭제는 각 list들의 `id`를 이용하고, `filter`를 통해 db list에서 빼낸다.
+2. 배운점
+    - 배열 그대로는 localStorge에 넣을 수 없기 때문에 `JSON.stringify(toDos)`를 통해 String 형식으로 바꿔준다.
+    - 데이터를 사용할 때에는 다시 배열 형식이 필요하기 때문에, `JSON.parse(savedToDos);`를 통해 위에서 String 형식으로 localStorge에 저장한 데이터들을 배열 형식으로 바꿔준다.
+    - id값을 부여할 때에는 `Date.now()`를 사용하였다.
