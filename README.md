@@ -57,5 +57,6 @@
     - list 삭제는 각 list들의 `id`를 이용하고, `filter`를 통해 db list에서 빼낸다.
 2. 배운점
     - 배열 그대로는 localStorge에 넣을 수 없기 때문에 `JSON.stringify(toDos)`를 통해 String 형식으로 바꿔준다.
-    - 데이터를 사용할 때에는 다시 배열 형식이 필요하기 때문에, `JSON.parse(savedToDos);`를 통해 위에서 String 형식으로 localStorge에 저장한 데이터들을 배열 형식으로 바꿔준다.
+    - 데이터를 사용할 때에는 다시 배열 형식이 필요하기 때문에,<br>
+      위에서 localStorge에 String 형식으로 저장한 데이터들을 `JSON.parse(savedToDos);`를 통해 배열 형식으로 바꿔준다.
     - id값을 부여할 때에는 `Date.now()`를 사용하였다.
