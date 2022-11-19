@@ -1,5 +1,5 @@
 # My-Chrome-App
-제작 기간: 2022.11.12 ~ 
+제작 기간: 2022.11.12 ~ 2022.11.19
 <br>
 <br>
 <br>
@@ -55,8 +55,18 @@
     - todo.js에서 구현하고자 하는 것은 새로고침을 하더라도 추가 또는 삭제된 list들이 저장되는 것이다.
     - list 추가는 `localStorge.setItem`을 통해 구현한다. `function saveToDos()`
     - list 삭제는 각 list들의 `id`를 이용하고, `filter`를 통해 db list에서 빼낸다.
-2. 배운점
+2. 배운 점
     - 배열 그대로는 localStorge에 넣을 수 없기 때문에 `JSON.stringify(toDos)`를 통해 String 형식으로 바꿔준다.
     - 데이터를 사용할 때에는 다시 배열 형식이 필요하기 때문에,<br>
       위에서 localStorge에 String 형식으로 저장한 데이터들을 `JSON.parse(savedToDos);`를 통해 배열 형식으로 바꿔준다.
     - id값을 부여할 때에는 `Date.now()`를 사용하였다.
+<br>
+
+> ## weather.js
+1. Logic<br>
+    - `navigator.geolocation.getCurrentPosition()` 메소드를 이용하여 사용자의 위도와 경도의 값을 얻는다.
+    - API를 이용하여 위도와 경도를 입력 후 해당 장소의 필요한 데이터를 렌더링한다.
+2. 배운 점
+    - API라는 것을 처음 사용해보았는데, 생각보다 간단했다.
+    - `url`을 이용하여 API 데이터를 가져올 수 있었다.
+    - `fetch()`를 통해 url로 가져온 데이터를 가공하였다.
